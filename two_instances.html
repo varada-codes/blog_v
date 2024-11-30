@@ -35,6 +35,7 @@
     section {
       width: 81%;
       margin: auto;
+
       text-align: left;
     }
     h1{
@@ -65,6 +66,13 @@
       font-weight: 300;
       text-align:left;
     }
+
+    .blog-container {
+      display: flex; /* Makes child elements align horizontally */
+      gap: 20px; /* Adds space between blog boxes */
+      justify-content: space-between; /* Distributes space between boxes */
+      flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+      }
     .blog-box {
       flex: 1 1 calc(33.333% - 20px);
       max-width: 400px;
@@ -80,7 +88,7 @@
 </head>
 
 <body>
-  <section id="editor">
+  <section id="editor" class="blog-container">
     <h1>Technical Blogs:</h1>
 
     <div id='edit1' style="margin-top: 30px;" class="blog-box">
