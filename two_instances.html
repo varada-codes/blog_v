@@ -67,24 +67,28 @@
       text-align:left;
     }
 
-    .blog-container {
-      display: grid; /* Makes child elements align horizontally */
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-      gap: 20px; /* Adds space between blog boxes */
-      justify-content: space-between; /* Distributes space between boxes */
+    .scroll-container {
+      display: flex; /* Makes child elements align horizontally */
+      overflow-x: auto; /* Enables horizontal scrolling */
+      gap: 20px; /* Space between boxes */
+      padding: 10px; /* Optional padding around the container */
+      scroll-behavior: smooth; /* Smooth scrolling effect */
+      border: 1px solid #ccc; /* Optional: adds a border to the container */
+      background-color: #f9f9f9; /* Optional: light background for the container */
       }
     .blog-box {
+      flex: 0 0 300px; /* Fixed width for each blog box */
       border: 1px solid #ccc;
       border-radius: 10px;
       padding: 20px;
-      background-color: #f9f9f9;
+      background-color: white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
   </style>
 </head>
 
 <body>
-  <section id="editor" class="blog-container">
+  <section id="editor" class="scroll-container">
     <h1>Technical Blogs:</h1>
     <br>
 
