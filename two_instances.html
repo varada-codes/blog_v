@@ -68,10 +68,10 @@
     }
 
     .blog-container {
-      display: flex; /* Makes child elements align horizontally */
+      display: grid; /* Makes child elements align horizontally */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
       gap: 20px; /* Adds space between blog boxes */
       justify-content: space-between; /* Distributes space between boxes */
-      flex-wrap: wrap; /* Allows wrapping if there's not enough space */
       }
     .blog-box {
       flex: 1 1 calc(33.333% - 20px);
