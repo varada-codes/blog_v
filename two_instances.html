@@ -87,6 +87,10 @@
       padding: 20px;
       background-color: rgb(234, 239, 241);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-grow: 1; /* Allow paragraph to grow or shrink as needed */
+      overflow: hidden; /* Clip overflowing text */
+      text-overflow: ellipsis; /* Add "..." for overflow */
+      white-space: normal; /* Allow wrapping */
       }
   </style>
 </head>
