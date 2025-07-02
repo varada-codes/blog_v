@@ -4,135 +4,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
-  <header>
-    <img src="header_img.webp" alt="header" class="header-image">
-  </header>
   <title>Blogs by Varada</title>
-
-
 
   <style>
     body {
       line-height: 1.2;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
-    section {
-      width: 90%;
-      margin: auto;
-      padding-top: 30px;
-    }
-
-    section1{
-      width: 90%;
-      margin: auto;
-      padding-top: 30px;
-      background-color: darkcyan;
-    }
-
-    #data-list {
-      -webkit-column-gap: 30px;
-      /* Chrome, Safari, Opera */
-      -moz-column-gap: 30px;
-      /* Firefox */
-      column-gap: 30px;
-      -webkit-column-count: 4;
-      /* Chrome, Safari, Opera */
-      -moz-column-count: 4;
-      /* Firefox */
-      column-count: 4;
-    }
-
-    .header-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-  }
-
-    #data-list>div {
-      page-break-inside: avoid;
-    }
-
-    #data-list>div:after {
-      content: "";
-      display: block;
-      height: 20px;
-    }
-
-    h1 {
-      font-size: 80px;
-      font-weight: 300;
-      text-align: center;
-    }
-
-    h2 {
-      margin: 0;
-      color: #252525;
-      border-left: 5px solid #6770ee;
-      padding-left: 50px;
-      font-weight: 400;
-      font-size: 35px;
-    }
-
-    h3{
-      font-size: 50px;
-      font-weight: 200;
-      text-align: center;
-      font-family: 'Times New Roman', Times, serif;
-    }
-
-    ul {
-      padding-left: 5px;
-      
-    }
-
-    ul li {
-      list-style: none;
-      font-size: 25px;
-    }
-
-    .about-us{
-      background-color: dodgerblue;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .about-us h3{
-      text-align: center;
-      color: antiquewhite;
-      font-size: 40px;
-    }
-
-    .about-us p{
-      font-size: 25px;
-      text-align: center;
-    }
-
   </style>
 </head>
 
 <body>
-  <section>
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+            class="d-inline-block align-text-top">
+          Bootstrap
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+          </div>
+
+        </div>
+    </nav>
     <h1>Blogs by Varada</h1>
 
-    <br/>
+    <br />
 
     <div id="data-list">
 
 
       <div>
-      <h2>Technical</h2>
+        <h2>Technical</h2>
         <ul>
           <img src="technical-girl.webp" alt="Technical" class="Technical" width="550px" height="350px">
           <li><a href="two_instances.html" title="Multiple Editor Instances">For the Technosavvy you!</a></li>
-          
-        </ul> <br>
-        
 
-      <h2>History</h2>
+        </ul> <br>
+
+
+        <h2>History</h2>
         <ul>
           <img src="history-girl.webp" alt="History" class="History" width="550px" height="350px">
           <li><a href="history.html" title="Historical human">For the Historophile you!</a></li>
@@ -140,12 +61,16 @@
       </div>
 
     </div>
-  </section>
 
-  <section id="editor", class="about-us">
-    <h3><strong>About Us</strong></h3>
-    <p>Varada Lanke</p>
-    <p>This website is handled ....</p>
+    <section id="editor" , class="about-us">
+      <h3><strong>About Us</strong></h3>
+      <p>Varada Lanke</p>
+      <p>This website is handled ....</p>
 
-  </section>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
+
