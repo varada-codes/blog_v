@@ -69,21 +69,30 @@
 
 <body>
   <div class="container-fluid">
-    <nav class="navbar bg-body-tertiary fixed-top p-0">
-      <div class="d-flex justify-content-between align items-center gap-4">
-        <a class="navbar-brand" href="#">
-          <img src=".\images\vl_logo_.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
-        </a>
-        <div class="d-flex gap-4 align-items-center">
-          <a class="nav-link fs-5" href="#">Home</a>
-          <a class="nav-link fs-5" href="#">Features</a>
-          <a class="nav-link fs-5" href="#">Pricing</a>
-          <a class="nav-link fs-5" href="#">Home</a>
-          <a class="nav-link fs-5" href="#">Features</a>
-          <a class="nav-link fs-5" href="#">Pricing</a>
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar bg-body-tertiary fixed-top p-2">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./images/vl_logo_.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+
+    <!-- Toggle Button: visible on small screens only -->
+    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu: visible inline on md+, collapsible on sm -->
+    <div class="collapse navbar-collapse d-md-flex justify-content-end gap-4 align-items-center" id="navbarMenu">
+      <a class="nav-link fs-5" href="#">Home</a>
+      <a class="nav-link fs-5" href="#">Features</a>
+      <a class="nav-link fs-5" href="#">Pricing</a>
+      <a class="nav-link fs-5" href="#">Home</a>
+      <a class="nav-link fs-5" href="#">Features</a>
+      <a class="nav-link fs-5" href="#">Pricing</a>
+    </div>
+  </div>
+</nav>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
       <div class="carousel-inner">
