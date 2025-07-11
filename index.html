@@ -74,11 +74,19 @@
         <a class="navbar-brand" href="#">
           <img src=".\images\vl_logo_.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
         </a>
-        <div class="d-flex gap-4 align-items-center">
-          <a class="nav-link fs-5" href="#">Home</a>
-          <a class="nav-link fs-5" href="#">Features</a>
-          <a class="nav-link fs-5" href="#">Pricing</a>
-        </div>
+         <!-- Toggle button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <div class="d-flex gap-4 align-items-center ms-auto">
+        <a class="nav-link fs-5" href="#">Home</a>
+        <a class="nav-link fs-5" href="#">Features</a>
+        <a class="nav-link fs-5" href="#">Pricing</a>
+      </div>
+    </div>
       </div>
     </nav>
 
