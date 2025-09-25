@@ -4,25 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="froala_style.css">
-  <link rel="stylesheet" href="code_view.css">
-  <link rel="stylesheet" href="colors.css">
-  <link rel="stylesheet" href="draggable.css">
-  <link rel="stylesheet" href="emoticons.css">
-  <link rel="stylesheet" href="image_manager.css">
-  <link rel="stylesheet" href="image.css">
-  <link rel="stylesheet" href="../../css/plugins/line_breaker.css">
-  <link rel="stylesheet" href="../../css/plugins/table.css">
-  <link rel="stylesheet" href="../../css/plugins/char_counter.css">
-  <link rel="stylesheet" href="../../css/plugins/video.css">
-  <link rel="stylesheet" href="../../css/plugins/fullscreen.css">
-  <link rel="stylesheet" href="../../css/plugins/file.css">
-  <link rel="stylesheet" href="../../css/plugins/quick_insert.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
 
   <style>
-
     body {
       line-height: 1.5;
       font-size: medium;
@@ -38,7 +21,8 @@
 
       text-align: left;
     }
-    h1{
+
+    h1 {
       font-size: 50px;
       text-decoration: underline;
       text-overflow: ellipsis;
@@ -46,73 +30,85 @@
       text-align: center;
     }
 
-    h2{
+    h2 {
       font-size: 20px;
       font-weight: 300;
-      text-align:left;
-    }
-    h3{
-      font-size: 20px;
-      font-weight: 300;
-      text-align:left;
+      text-align: left;
     }
 
-    h4{
+    h3 {
       font-size: 20px;
       font-weight: 300;
-      text-align:left;
+      text-align: left;
     }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 300;
+      text-align: left;
+    }
+
     h5 {
       font-size: 20px;
       font-weight: 300;
-      text-align:left;
+      text-align: left;
     }
 
     .scroll-container {
-      display: flex; /* Makes child elements align horizontally */
-      
-      overflow-x: auto; /* Enables horizontal scrolling */
-      gap: 20px; /* Space between boxes */
+      display: flex;
+      /* Makes child elements align horizontally */
+
+      overflow-x: auto;
+      /* Enables horizontal scrolling */
+      gap: 20px;
+      /* Space between boxes */
       height: 100vh;
       width: 100vw;
-      scroll-behavior: smooth; /* Smooth scrolling effect */
-      
-      background-color: lightblue; /* Optional: light background for the container */
-      }
+      scroll-behavior: smooth;
+      /* Smooth scrolling effect */
+
+      background-color: lightblue;
+      /* Optional: light background for the container */
+    }
+
     .blog-box {
-      flex: 0 0 200px; /* Fixed width for each blog box */
+      flex: 0 0 200px;
+      /* Fixed width for each blog box */
       border: 1px solid #ccc;
       border-radius: 10px;
       padding: 20px;
       height: fit-content;
       background-color: rgb(234, 239, 241);
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      flex-grow: 1; /* Allow paragraph to grow or shrink as needed */
-      
-      }
+      flex-grow: 1;
+      /* Allow paragraph to grow or shrink as needed */
+
+    }
   </style>
 </head>
 
 <body>
-  
-    <h1><strong>Technical Blogs</strong></h1>
-    <br>
-    <section id="editor" class="scroll-container">
+
+  <h1><strong>Technical Blogs</strong></h1>
+  <br>
+  <section id="editor" class="scroll-container">
     <div id='edit1' style="margin-top: 30px;" class="blog-box">
       <h2><strong>Rise of Melodious Technologies</strong></h2>
 
 
-      <img class="fr-fir fr-dii" src="./images/ai_img.webp" alt="Old Clock" width="300" /> 
-      
+      <img class="fr-fir fr-dii" src="./images/ai_img.webp" alt="Old Clock" width="300" />
+
       <p>Yes! You heard it right. The key to this magic is, AI.</p>
-      <br>Artificial Intelligence (AI) has revolutionized various industries, including music. With advancements in AI technology, it is now possible to create music using AI-generated voices. AI voices, also known as AI singers or AI-generated vocals, offer a new realm of possibilities for music creators and enthusiasts.<br />
-      
-  <a href="tech_1.html" class="read-more-btn">Read More</a>
+      <br>Artificial Intelligence (AI) has revolutionized various industries, including music. With advancements in AI
+      technology, it is now possible to create music using AI-generated voices. AI voices, also known as AI singers or
+      AI-generated vocals, offer a new realm of possibilities for music creators and enthusiasts.<br />
+
+      <a href="tech_1.html" class="read-more-btn">Read More</a>
 
     </div>
 
     <div id='edit' style="margin-top: 30px;" class="blog-box">
-      
+
       <h3><strong>Smart Home Innovations</strong></h3>
       <img class="fr-fir fr-dii" src="photo1.jpg" alt="Smart Home" width="150" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu
@@ -120,7 +116,7 @@
     </div>
 
     <div id='edit3' style="margin-top: 30px;" class="blog-box">
-      
+
       <h4><strong>Robotics</strong></h4>
       <img class="fr-fir fr-dii" src="photo1.jpg" alt="Robotics" width="150" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu
@@ -128,7 +124,7 @@
     </div>
 
     <div id='edit3' style="margin-top: 30px;" class="blog-box">
-      
+
       <h5><strong>Cyber Security</strong></h5>
       <img class="fr-fir fr-dii" src="photo1.jpg" alt="Cyber security" width="150" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis diam in odio iaculis blandit. Nunc eu
@@ -178,4 +174,5 @@
     new FroalaEditor('#edit3', {})
   })()
 </script>
+
 </html>
